@@ -11,18 +11,16 @@ int main()
 {
 int c,p,x,l;
 
-//cin >> c >> p >> x >> l;
-scanf("%d" "%d" "%d" "%d",&c,&p,&x,&l);
+cin >> c >> p >> x >> l;
 vector<int> n_neigh;
-n_neigh.resize(c+1); // Are all ints initilized to 0???
+n_neigh.resize(c+1);
 vvi buckets;
 buckets.resize(c+1);
 
 for(int i = 1; i <= p; ++i)
 {
 	int a,b;
-	//cin >> a >> b;
-	scanf("%d" "%d", &a,&b);
+	cin >> a >> b;
 	buckets.at(a).insert(b);
 	buckets.at(b).insert(a);
 	n_neigh.at(a) = n_neigh.at(a) + 1;
@@ -38,10 +36,6 @@ else
 {
 while( !q.empty() )
 {
-	/*if(exit)
-	{	
-		break;
-	}*/
 	auto elem = q.front();
 	q.pop_front();
 	
@@ -73,12 +67,9 @@ while( !q.empty() )
 }
 
 if(exit)
-	//cout << "leave";
-	printf("%s","leave");
+	cout << "leave";
 else
-	printf("%s","stay");
-	//cout << "stay";
-
+	cout << "stay";
 
 return 0;
 }
