@@ -1,2 +1,2 @@
 # Competitive-Programming
-Solutions to problems from various programming contests. 
+Solutions to Kattis problems, see https://open.kattis.com/
